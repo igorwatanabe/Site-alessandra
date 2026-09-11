@@ -1,0 +1,40 @@
+.servicos { background: var(--cream); }
+
+.servicosGrid { display: grid; gap: 20px; grid-template-columns: 1fr; }
+@media (min-width: 600px) { .servicosGrid { grid-template-columns: 1fr 1fr; } }
+@media (min-width: 1024px) { .servicosGrid { grid-template-columns: repeat(4, 1fr); } }
+
+.card {
+  background: var(--white);
+  border-radius: var(--r-lg);
+  padding: 28px 24px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: transform .25s, box-shadow .25s;
+}
+.card:hover { transform: translateY(-6px); box-shadow: var(--shadow-md); }
+
+.cardAccent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--sage), var(--sage-lt));
+}
+
+.cardIcon {
+  width: 50px;
+  height: 50px;
+  border-radius: 14px;
+  background: var(--sage-xlt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin-bottom: 16px;
+}
+
+.card h3 { font-family: 'Playfair Display', serif; font-size: 1.05rem; margin-bottom: 10px; color: var(--dark); }
+.card p { font-size: .85rem; color: var(--mid); line-height: 1.7; }

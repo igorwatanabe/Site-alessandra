@@ -1,0 +1,40 @@
+.mobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--cream);
+  z-index: 199;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-8px);
+  transition: all .3s ease;
+}
+.mobileMenu:global(.open) {
+  opacity: 1;
+  pointer-events: all;
+  transform: none;
+}
+
+.mobileLink {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: var(--dark);
+  padding: 12px 0;
+  opacity: 0;
+  transform: translateY(16px);
+  transition: all .35s ease, color .2s;
+}
+.mobileMenu:global(.open) .mobileLink { opacity: 1; transform: none; }
+.mobileMenu:global(.open) .mobileLink:nth-child(1) { transition-delay: .05s; }
+.mobileMenu:global(.open) .mobileLink:nth-child(2) { transition-delay: .1s; }
+.mobileMenu:global(.open) .mobileLink:nth-child(3) { transition-delay: .15s; }
+.mobileMenu:global(.open) .mobileLink:nth-child(4) { transition-delay: .2s; }
+.mobileMenu:global(.open) .mobileLink:nth-child(5) { transition-delay: .25s; }
+.mobileLink:hover { color: var(--sage); }

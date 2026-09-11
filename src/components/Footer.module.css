@@ -1,0 +1,60 @@
+.footer { background: #242424; color: #bbb; padding: 52px 0 28px; }
+
+.footerGrid {
+  display: grid;
+  gap: 36px;
+  grid-template-columns: 1fr;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, .07);
+}
+@media (min-width: 600px) { .footerGrid { grid-template-columns: 1fr 1fr; } }
+@media (min-width: 900px) { .footerGrid { grid-template-columns: 2fr 1fr 1fr 1fr; } }
+
+.footerBrand p { font-size: .83rem; line-height: 1.75; color: #888; margin-top: 14px; }
+
+.brandLogo { display: flex; align-items: center; gap: 10px; }
+.brandName { font-family: 'Playfair Display', serif; font-size: .95rem; color: var(--sage-lt); line-height: 1.2; }
+.brandSub { font-size: .68rem; color: #888; letter-spacing: .04em; }
+
+.footer :global(h5) {
+  font-size: .8rem;
+  font-weight: 600;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 14px;
+}
+.footer :global(ul) { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.footer :global(ul a) { font-size: .83rem; color: #888; transition: color .2s; }
+.footer :global(ul a:hover) { color: var(--sage-lt); }
+
+.socials { display: flex; gap: 10px; margin-top: 6px; }
+.soc {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, .06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  transition: background .2s;
+  text-decoration: none;
+}
+.soc:hover { background: var(--sage); }
+
+.hours { font-size: .8rem; color: #666; line-height: 1.8; }
+
+.footerBottom {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
+  text-align: center;
+  font-size: .78rem;
+  color: #555;
+}
+@media (min-width: 600px) {
+  .footerBottom { flex-direction: row; justify-content: space-between; text-align: left; }
+}
