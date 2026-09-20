@@ -47,14 +47,14 @@ export default function Hero() {
               priority
             />
             <div className={styles.heroBadge}>
-              <span className={styles.heroBadgeIcon}>📚</span>
+              {/* <span className={styles.heroBadgeIcon}>📚</span> */}
               <div>
                 <div className={styles.hbNum}>Terapia TCC</div>
                 <div className={styles.hbLbl}>Cognitivo-Comportamental</div>
               </div>
             </div>
             <div className={styles.heroBadge2}>
-              <span className={styles.heroBadgeIcon}>🧠</span>
+              {/* <span className={styles.heroBadgeIcon}>🧠</span> */}
               <div>
                 <div className={styles.hbNum}>Neuropsicologia</div>
                 <div className={styles.hbLbl}>Especialidade</div>
