@@ -27,7 +27,7 @@ export default function Footer() {
               <li><a href="#sobre">Sobre</a></li>
               <li><a href="#servicos">Serviços</a></li>
               <li><a href="#depoimentos">Depoimentos</a></li>
-              <li><a href="#blog">Artigos</a></li>
+              <li><a href="#blog">Reflexões</a></li>
               <li><a href="#contato">Contato</a></li>
             </ul>
           </div>

@@ -2,25 +2,28 @@ import styles from './Servicos.module.css'
 
 const services = [
   {
-    icon: '🧠',
+    image: '/card1.png',
+    imageAlt: 'Ilustração do serviço de psicoterapia individual',
     title: 'Psicoterapia Individual',
-    desc: 'Atendimento para adultos e adolescentes, focado no autoconhecimento, gestão emocional e superação de desafios pessoais.',
+    desc: 'Acompanhamento individual e acolhedor voltado para o autoconhecimento, oferecendo suporte para transições e desafios.',
     delay: 'reveal-d1',
   },
   {
-    icon: '💑',
+    image: '/card2.png',
+    imageAlt: 'Ilustração do serviço de avaliação neuropsicológica',
     title: 'Avaliação Neuropsicológica',
-    desc: 'Espaço para casais trabalharem a comunicação, resolverem conflitos e fortalecerem o vínculo afetivo com suporte profissional.',
+    desc: 'Mapeamento do funcionamento cognitivo e emocional para identificar as potencialidades e dificuldades, auxiliando no diagnóstico e processo terapêutico.',
     delay: 'reveal-d2',
   },
   {
-    icon: '🎯',
+    image: '/card3.png',
+    imageAlt: 'Ilustração do serviço de reabilitação neuropsicológica',
     title: 'Reabilitação Neuropsicológica',
-    desc: 'Auxílio na descoberta de aptidões, valores e caminhos profissionais de forma clara, consciente e personalizada.',
+    desc: 'Intervenção personalizada para treino, adaptação e recuperação de funções cognitivas, visando a autonomia e melhoria na qualidade de vida.',
     delay: 'reveal-d3',
   },
   // {
-  //   icon: '👨‍👩‍👧',
+  //   number: '04',
   //   title: 'Terapia Familiar',
   //   desc: 'Suporte para famílias que enfrentam conflitos ou mudanças, promovendo harmonia, compreensão e vínculos mais saudáveis.',
   //   delay: 'reveal-d4',
@@ -48,7 +51,7 @@ export default function Servicos() {
           {services.map((s) => (
             <div key={s.title} className={`${styles.card} reveal ${s.delay}`}>
               <div className={styles.cardAccent} />
-              <div className={styles.cardIcon}>{s.icon}</div>
+              <img className={styles.cardImage} src={s.image} alt={s.imageAlt} />
               <h3>{s.title}</h3>
               <p>{s.desc}</p>
             </div>
